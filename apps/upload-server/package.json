@@ -1,0 +1,19 @@
+{
+  "name": "upload-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "Joris Gallot",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "pnpm@9.15.9",
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}

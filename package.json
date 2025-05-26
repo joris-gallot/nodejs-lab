@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "nr -r typecheck"
+  },
+  "keywords": [],
+  "author": "Joris Gallot",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "pnpm@9.15.9",
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:",
+    "@antfu/ni": "catalog:",
+    "eslint": "catalog:"
+  }
+}
