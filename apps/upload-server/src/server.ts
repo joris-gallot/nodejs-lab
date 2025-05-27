@@ -30,5 +30,5 @@ const server = createServer((req, res) => {
 
 server.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`Server running at ${url}`)
+  console.log(`upload-server listening on ${url}`)
 })

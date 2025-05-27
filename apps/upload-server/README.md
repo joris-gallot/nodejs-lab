@@ -2,12 +2,14 @@
 
 > ⚙️ Minimal file upload server using raw Node.js
 
-**upload-server** is a small project to explore Node.js core APIs without any frameworks.
+This project handles file uploads and temporary downloads using only native Node.js modules.
 
 ---
 
 ## Features
 
-- `PUT /upload` — stream file to disk & compute SHA-256 hash
-- `GET /download/:token` — download with temporary token
-- In-memory TTL: files auto-expire after a set time
+- Upload files via `PUT /upload`
+- Save streamed file to disk and compute its SHA-256 hash
+- Generate temporary token for file download
+- Serve file via `GET /download/:token`
+- Auto-expire files after a short TTL (in-memory)
