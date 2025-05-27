@@ -18,7 +18,7 @@ A minimal HTTP file upload server using:
 - `crypto` to hash file content
 - TTL token system for download links
 
-> 📄 See its [README](./apps/upload-server/README.md)
+> 📄 See its [README](./apps/upload-server)
 
 ### `static-server`
 
@@ -28,4 +28,4 @@ A lightweight static file server using:
 - `fs`, `path`, and `url` to locate and read files
 - MIME detection and basic error handling
 
-> 📄 See its [README](./apps/static-server/README.md)
+> 📄 See its [README](./apps/static-server)
