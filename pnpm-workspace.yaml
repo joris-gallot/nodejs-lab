@@ -5,5 +5,5 @@ catalog:
   '@antfu/eslint-config': ^4.13.2
   '@antfu/ni': ^24.4.0
   '@types/node': ^22.15.21
-  eslint: ^9.27.0
+  eslint: ^9.28.0
   typescript: ^5.8.3
