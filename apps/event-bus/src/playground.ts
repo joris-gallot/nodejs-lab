@@ -32,4 +32,5 @@ bus.emit('sum', 5)
 bus.emit('sum', 3)
 assert.equal(result, 8)
 
+// eslint-disable-next-line no-console
 console.log('All tests passed ✅')
