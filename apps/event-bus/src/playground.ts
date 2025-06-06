@@ -14,8 +14,14 @@ bus.on('ping', (msg) => {
   assert.equal(msg, 'hello')
 })
 
+// @ts-expect-error - should be a string
+bus.on('ping', (_: number) => {})
+
 bus.emit('ping', 'hello')
 assert.ok(called)
+
+// @ts-expect-error - should be a string
+bus.emit('ping', 2)
 
 let result = 0
 bus.on('sum', (n) => {
