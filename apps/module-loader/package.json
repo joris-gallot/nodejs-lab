@@ -1,0 +1,20 @@
+{
+  "name": "module-loader",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.9",
+  "description": "",
+  "author": "Joris Gallot",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "vm:runner": "node --experimental-strip-types src/vm-runner.ts",
+    "dynamic:import": "node --experimental-strip-types src/dynamic-import.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}
