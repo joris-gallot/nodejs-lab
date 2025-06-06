@@ -29,3 +29,24 @@ A lightweight static file server using:
 - MIME detection and basic error handling
 
 > 📄 See its [README](./apps/static-server)
+
+### `event-bus`
+
+A minimal typed event emitter built with Node.js core APIs:
+
+- Type-safe `emit` / `on` logic with generics
+- Built on top of Node.js `EventEmitter`
+- Includes minimal test file using `assert`
+
+> 📄 See its [README](./apps/event-bus)
+
+### `module-loader`
+
+Dynamic module loader using native Node.js ESM and VM features:
+
+- Dynamically load ESM or CommonJS modules at runtime
+- Uses `import()` with file URL resolution
+- Basic sandboxing using `vm`
+- Example: run untrusted code in a limited context
+
+> 📄 See its [README](./apps/module-loader)
