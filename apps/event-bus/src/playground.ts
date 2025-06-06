@@ -1,17 +1,29 @@
+import { strict as assert } from 'node:assert'
 import { TypedEventBus } from './index.ts'
 
-interface AppEvents {
-  'user:login': { id: string, name: string }
-  'log:error': { message: string, code?: number }
+interface TestEvents {
+  ping: string
+  sum: number
 }
 
-const bus = new TypedEventBus<AppEvents>()
+const bus = new TypedEventBus<TestEvents>()
 
-bus.on('user:login', (user) => {
-  // eslint-disable-next-line no-console
-  console.log(`User logged in: ${user.name}`)
+let called = false
+bus.on('ping', (msg) => {
+  called = true
+  assert.equal(msg, 'hello')
 })
 
-bus.emit('user:login', { id: 'abc123', name: 'Alice' })
+bus.emit('ping', 'hello')
+assert.ok(called)
 
-bus.emit('log:error', { message: 'Oops', code: 500 })
+let result = 0
+bus.on('sum', (n) => {
+  result += n
+})
+
+bus.emit('sum', 5)
+bus.emit('sum', 3)
+assert.equal(result, 8)
+
+console.log('All tests passed ✅')
