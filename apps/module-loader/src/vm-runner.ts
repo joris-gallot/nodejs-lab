@@ -14,5 +14,4 @@ const context = {
 const script = new Script(code)
 script.runInNewContext(context)
 
-// eslint-disable-next-line no-console
 console.log('Sandbox result:', context.result)

@@ -14,7 +14,6 @@ const readStart = performance.now()
 readFileSync(file)
 const readEnd = performance.now()
 
-// eslint-disable-next-line no-console
 console.log(`💾 Write: ${(writeEnd - writeStart).toFixed(2)}ms`)
-// eslint-disable-next-line no-console
+
 console.log(`📖 Read: ${(readEnd - readStart).toFixed(2)}ms`)

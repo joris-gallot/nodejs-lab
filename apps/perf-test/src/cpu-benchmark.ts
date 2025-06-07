@@ -9,5 +9,4 @@ for (let i = 0; i < 100; i++) {
 
 const end = performance.now()
 
-// eslint-disable-next-line no-console
 console.log(`🔒 CPU hash loop took ${(end - start).toFixed(2)}ms`)
