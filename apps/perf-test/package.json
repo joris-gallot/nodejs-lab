@@ -1,0 +1,21 @@
+{
+  "name": "perf-test",
+  "type": "module",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.9",
+  "description": "",
+  "author": "Joris Gallot",
+  "license": "MIT",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "cpu:benchmark": "node --experimental-strip-types src/cpu-benchmark.ts",
+    "io:benchmark": "node --experimental-strip-types src/io-benchmark.ts",
+    "perf:observer": "node --experimental-strip-types src/perf-observer.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:"
+  }
+}
