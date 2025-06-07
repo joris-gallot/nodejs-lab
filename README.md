@@ -50,3 +50,13 @@ Dynamic module loader using native Node.js ESM and VM features:
 - Example: run untrusted code in a limited context
 
 > 📄 See its [README](./apps/module-loader)
+
+### `perf-test`
+
+Micro-benchmarks comparing CPU and I/O performance in raw Node.js:
+
+- Compare CPU-bound vs I/O-bound tasks
+- Use `performance.now()` and `PerformanceObserver`
+- Includes profiling examples and benchmark results
+
+> 📄 See its [README](./apps/perf-test)
