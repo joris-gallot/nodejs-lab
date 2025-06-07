@@ -18,7 +18,7 @@ A minimal HTTP file upload server using:
 - `crypto` to hash file content
 - TTL token system for download links
 
-> 📄 See its [README](./apps/upload-server)
+> 📄 [View project](./apps/upload-server)
 
 ### `static-server`
 
@@ -28,7 +28,7 @@ A lightweight static file server using:
 - `fs`, `path`, and `url` to locate and read files
 - MIME detection and basic error handling
 
-> 📄 See its [README](./apps/static-server)
+> 📄 [View project](./apps/static-server)
 
 ### `event-bus`
 
@@ -38,7 +38,7 @@ A minimal typed event emitter built with Node.js core APIs:
 - Built on top of Node.js `EventEmitter`
 - Includes minimal test file using `assert`
 
-> 📄 See its [README](./apps/event-bus)
+> 📄 [View project](./apps/event-bus)
 
 ### `module-loader`
 
@@ -49,7 +49,7 @@ Dynamic module loader using native Node.js ESM and VM features:
 - Basic sandboxing using `vm`
 - Example: run untrusted code in a limited context
 
-> 📄 See its [README](./apps/module-loader)
+> 📄 [View project](./apps/module-loader)
 
 ### `perf-test`
 
@@ -59,4 +59,4 @@ Micro-benchmarks comparing CPU and I/O performance in raw Node.js:
 - Use `performance.now()` and `PerformanceObserver`
 - Includes profiling examples and benchmark results
 
-> 📄 See its [README](./apps/perf-test)
+> 📄 [View project](./apps/perf-test)
