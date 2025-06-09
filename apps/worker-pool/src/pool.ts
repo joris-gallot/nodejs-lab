@@ -10,12 +10,15 @@ interface Task {
   reject: (err: any) => void
 }
 
+class CustomWorker extends Worker {
+  public __task__: Task | undefined
+}
+
 export class WorkerPool extends EventEmitter {
   private poolSize = cpus().length
-  private workers: Worker[] = []
-  private idle: Worker[] = []
+  private workers: CustomWorker[] = []
+  private idle: CustomWorker[] = []
   private queue: Task[] = []
-  private workerFile = join(__dirname, 'worker.ts')
 
   constructor() {
     super()
@@ -25,12 +28,12 @@ export class WorkerPool extends EventEmitter {
   }
 
   private spawn() {
-    const worker = new Worker(this.workerFile)
+    const worker = new CustomWorker(join(__dirname, 'worker.ts'))
     worker.on('message', (result) => {
-      const task = worker.__task__ as Task
+      const task = worker.__task__
       delete worker.__task__
       this.idle.push(worker)
-      task.resolve(result)
+      task?.resolve(result)
       this.dequeue()
     })
     worker.on('error', err => this.emit('error', err))
