@@ -60,3 +60,14 @@ Micro-benchmarks comparing CPU and I/O performance in raw Node.js:
 - Includes profiling examples and benchmark results
 
 > 📄 [View project](./apps/perf-test)
+
+### `worker-pool`
+
+A minimal worker thread pool for CPU-bound tasks using:
+
+- `worker_threads` to run heavy tasks in parallel
+- Manual worker pool management with task queue
+- Limits concurrency to number of logical CPUs
+- Example with heavy Fibonacci computation
+
+> 📄 [View project](./apps/worker-pool)
