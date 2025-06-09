@@ -1,5 +1,5 @@
 import { EventEmitter } from 'node:events'
-import { cpus } from 'node:os'
+import { availableParallelism } from 'node:os'
 import { join } from 'node:path'
 import { Worker } from 'node:worker_threads'
 import { __dirname } from './utils.ts'
@@ -15,7 +15,7 @@ class CustomWorker extends Worker {
 }
 
 export class WorkerPool extends EventEmitter {
-  private poolSize = cpus().length
+  private poolSize = availableParallelism()
   private workers: CustomWorker[] = []
   private idle: CustomWorker[] = []
   private queue: Task[] = []
