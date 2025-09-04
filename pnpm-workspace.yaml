@@ -2,7 +2,7 @@ packages:
   - apps/*
 
 catalog:
-  '@antfu/eslint-config': ^5.2.1
+  '@antfu/eslint-config': ^5.2.2
   '@antfu/ni': ^24.4.0
   '@types/node': ^22.18.0
   eslint: ^9.34.0
