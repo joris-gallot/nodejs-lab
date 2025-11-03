@@ -4,6 +4,6 @@ packages:
 catalog:
   '@antfu/eslint-config': ^5.4.1
   '@antfu/ni': ^24.4.0
-  '@types/node': ^22.18.0
+  '@types/node': ^22.19.0
   eslint: ^9.39.0
   typescript: ^5.9.3
