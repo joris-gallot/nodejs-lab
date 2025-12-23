@@ -2,7 +2,7 @@
   "name": "perf-test",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@10.26.1",
+  "packageManager": "pnpm@10.26.2",
   "description": "",
   "author": "Joris Gallot",
   "license": "MIT",
